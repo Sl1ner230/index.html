@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форматування таблиці за допомогою CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    thead {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+      background-color: #e0f7fa;
+    }
+
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .highlight {
+      background-color: #ffe082;
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Форматована таблиця CSS</h1>
+
+  <table>
+    <caption>Результати тестування студентів</caption>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>ПІБ</th>
+        <th>Група</th>
+        <th>Оцінка</th>
+        <th>Примітка</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Іваненко Марія</td>
+        <td>ІПЗ-21</td>
+        <td class="highlight">98</td>
+        <td>Відмінно</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Петренко Олег</td>
+        <td>ІПЗ-21</td>
+        <td>85</td>
+        <td>Добре</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Коваль Світлана</td>
+        <td>ІПЗ-21</td>
+        <td>92</td>
+        <td>Відмінно</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Шевченко Дмитро</td>
+        <td>ІПЗ-21</td>
+        <td>74</td>
+        <td>Зараховано</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    📄 Переглянути цей документ онлайн:  
+    <a href="https://your-hosting-site.com/table-example.html" target="_blank">
+      https://your-hosting-site.com/table-example.html
+    </a>
+  </p>
+
+</body>
+</html>
